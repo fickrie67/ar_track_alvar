@@ -1,3 +1,9 @@
 See [ROS wiki](http://wiki.ros.org/ar_track_alvar) for the users document.
 
 git clone https://github.com/machinekoder/ar_track_alvar.git -b noetic-devel
+
+roslaunch ar_track_alvar gopro.launch
+
+rosbag record -a 
+
+rostopic echo -b file.bag -p /topic > data.txt
